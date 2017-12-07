@@ -1,0 +1,29 @@
+{
+  "name": "mynode",
+  "version": "1.0.0",
+  "description": "test assignment",
+  "main": "pg_input.js",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "knex": "^0.14.2",
+    "pg": "^7.4.0",
+    "prompt": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node pg_input.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prashant-walke-niyuj/node-assignment.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Prashant Walke",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/prashant-walke-niyuj/node-assignment/issues"
+  },
+  "homepage": "https://github.com/prashant-walke-niyuj/node-assignment#readme"
+}
