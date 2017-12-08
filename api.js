@@ -138,10 +138,14 @@ app.put('/users/:id', function (req, res) {
 
             } else {
                 knex('users').where({
-                    id: req.params.id
+                    'id': req.params.id
                 }).update(
                     {first_name: req.body.first_name}
-                );
+                ).then(function (count) {
+                    console.log(count);
+                }).finally(function () {
+                    knex.destroy();
+                });
                 res.status(200)
                     .json({
                         status: 'success',
